@@ -2,8 +2,15 @@ import { getServerSession } from "next-auth";
 
 export default async function Home() {
   // En Next.js (App Router), on peut fetch directement dans le composant
-  const res = await fetch('http://localhost:3000/users', { cache: 'no-store' });
-  const users = await res.json();
+  
+  let users: any[] = [];
+  try {
+    const res = await fetch('http://localhost:3001/users', { cache: 'no-store' });
+   users = await res.json();
+  } catch (error) {
+    console.error('Erreur lors de la récupération des utilisateurs:', error);
+  }
+  
 
   return (
     <main className="p-10 bg-gray-100 min-h-screen">

@@ -1,7 +1,7 @@
 import { getServerSession } from "next-auth";
 import { redirect } from "next/navigation";
-import LogoutButton from "@/components/LogoutButton"; // Import du bouton
-import AddWorkout from "@/components/AddWorkout"; // Import du composant pour ajouter une séance d'entraînement
+import LogoutButton from "../../components/LogoutButton"; // Import du bouton
+import AddWorkout from "../../components/AddWorkout"; // Import du composant pour ajouter une séance d'entraînement
 
 async function getWorkouts(token: string) {
   const res = await fetch(
