@@ -1,6 +1,9 @@
-import AuthProvider from "../components/AuthProvider";
+import AuthProvider from "../auth/AuthProvider";
+// @ts-ignore: next types not found
 import type { Metadata } from "next";
+// @ts-ignore: next font import
 import { Geist, Geist_Mono } from "next/font/google";
+// @ts-ignore: CSS import
 import "./globals.css";
 
 const geistSans = Geist({

@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 // @ts-ignore: next font import
 import { Inter } from "next/font/google";
 // @ts-ignore: allow side-effect CSS import
-import "../couleurs/globals.css";
+import "../app/colors/globals.css";
 import Navbar from "./components/navbar";
 
 const inter = Inter({ subsets: ["latin"] });

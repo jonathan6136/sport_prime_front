@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import PerformanceChart, { ActivityDatum } from './perfs';
-import ActivityForm from './ActivityForm';
+import ActivityForm from '../activity/ActivityForm';
 // @ts-ignore: lucide-react types not available
 import { LayoutDashboard, History } from 'lucide-react';
 

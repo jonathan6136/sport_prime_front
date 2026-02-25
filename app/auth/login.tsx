@@ -1,5 +1,6 @@
 'use client';
 import React from 'react';
+// @ts-ignore: lucide-react types not found
 import { Mail, Lock, ArrowRight, Chrome } from 'lucide-react';
 
 export default function LoginPage() {

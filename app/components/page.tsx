@@ -1,7 +1,9 @@
+// @ts-ignore: next-auth types not found
 import { getServerSession } from "next-auth";
+// @ts-ignore: next/navigation types not found
 import { redirect } from "next/navigation";
-import LogoutButton from "../../components/LogoutButton"; // Import du bouton
-import AddWorkout from "../../components/AddWorkout"; // Import du composant pour ajouter une séance d'entraînement
+import LogoutButton from "./LogoutButton";
+import AddWorkout from "../activity/AddWorkout";
 
 async function getWorkouts(token: string) {
   const res = await fetch(

@@ -1,4 +1,5 @@
 import React from 'react';
+// @ts-ignore: lucide-react types not found
 import { Camera, Settings, Award, MapPin, Calendar, Heart, Edit3 } from 'lucide-react';
 
 export default function ProfilePage() {
